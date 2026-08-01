@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Content Refresh Opportunity Scoring</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #222;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>
+Content Refresh Opportunity Scoring Using Search Signals
+</h1>
+
+<section class="card">
+
+<h2>Abstract</h2>
+
+<p>
+This research investigates how search performance signals can identify
+content pages with refresh opportunities. Using the FlyRank ML Internship
+dataset, this project analyzes content age, impressions, CTR, and ranking
+signals. A baseline scoring system was compared with a machine learning
+approach. The final system creates ranked recommendations to support
+content review decisions.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Problem Statement</h2>
+
+<p>
+Content teams have many pages but limited resources.
+This project supports the decision:
+Which pages should be reviewed and refreshed first?
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Data</h2>
+
+<p>
+Dataset features:
+</p>
+
+<ul>
+<li>impressions_90d</li>
+<li>clicks_90d</li>
+<li>ctr</li>
+<li>avg_position</li>
+<li>content_age_days</li>
+</ul>
+
+<p>
+Excluded:
+private information, URLs, client details, and future-window data.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Methodology</h2>
+
+<p>
+A baseline rule-based score was created first.
+A Random Forest model was then trained using historical search signals
+to generate refresh opportunity scores.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Results</h2>
+
+<p>
+The model and baseline were compared using ranking evaluation approaches.
+The model provides a learned prioritization system while the baseline uses
+manual weighting.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Limitations</h2>
+
+<p>
+This system provides decision-support only.
+Observed relationships do not prove that refreshing content will directly
+increase traffic.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Reproducibility</h2>
+
+<p>
+All notebooks and experiments are available in the repository.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Acknowledgments</h2>
+
+<p>
+Built on the FlyRank ML Internship dataset.
+</p>
+
+</section>
+
+
+</body>
+</html>
